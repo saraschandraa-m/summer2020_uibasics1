@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- alignging with the parent
+    1. layout_alignParentTop
+    2.layout_alignParentBotton
+    3. layout_alignParentStart
+    4. layout_alignParentEnd
+    5. layout_centerHorizontal
+    6. layout_centerVertical
+    7. layout_centerInParent
+
+    -->
+
+    <TextView
+        android:id="@+id/tv_helloworld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Hello World!"
+        android:textSize="28sp" />
+
+
+    <!-- aligning with relative to other views
+     1. layout_below
+     2. layout_above
+     3. layout_toStartOf
+     4. layout_toEndOf
+     -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_helloworld"
+        android:text="Welcome to android relative layout session" />
+
+</RelativeLayout>
